@@ -7,9 +7,10 @@ public static void main(String[] args)
 {
 	
 	var context=new AnnotationConfigApplicationContext(AppConfig.class);
-	var str=context.getBean("name");
-	System.out.println("User:"+str);
-	System.out.println("Age:"+context.getBean("age"));
+//	var str=context.getBean("name");
+//	System.out.println("User:"+str);
+//	System.out.println("Age:"+context.getBean("age"));
 	System.out.println(context.getBean("address"));
+	System.out.println(context.getBean("personDetails"));
 }
 }
