@@ -7,7 +7,6 @@ public static void main(String[] args)
 	var superContra=new SuperContra();
 	var pacMan=new PacMan();
 	var gr=new GameRunner(pacMan);
-	
 	gr.run();
 }
 }
