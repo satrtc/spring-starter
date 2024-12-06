@@ -1,7 +1,9 @@
 package com.sat_spring_rtc.BasicSpringConfigs;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 record Address(String state, String city) {};
 record Person(String name, int age) {};
@@ -10,7 +12,8 @@ record Person(String name, int age) {};
 public class AppConfig {
 
 	
-	@Bean
+	@Bean(name="myname")
+	@Primary
 	public String name()
 	{
 		return "Hye you are talking to Satyam";
@@ -27,11 +30,20 @@ public class AppConfig {
 	{
 		return new Address("UP", "Chitrakoot");
 	}
+
+	@Bean
+	@Qualifier("name2.0")
+	public String name2()
+	{
+		return "Hye you are talking to Satyam 2.0";
+	}
+	
+
 	
 	@Bean(name="personDetails")
-	public Person person()
+	public Person person(String mname, int age)
 	{
-		return new Person(name(),age());
+		return new Person(mname, age);
 	}
 	
 }
