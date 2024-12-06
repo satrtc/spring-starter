@@ -1,5 +1,8 @@
 package com.sat_spring_rtc.game;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class PacMan implements GamingConsole {
 
 	@Override
