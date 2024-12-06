@@ -10,7 +10,13 @@ public static void main(String[] args)
 //	var str=context.getBean("name");
 //	System.out.println("User:"+str);
 //	System.out.println("Age:"+context.getBean("age"));
-	System.out.println(context.getBean("address"));
-	System.out.println(context.getBean("personDetails"));
+//	System.out.println(context.getBean("address"));
+	
+	//person bean that uses other bean internally for its implementation
+//	System.out.println(context.getBean("personDetails"));
+	String beans[]=context.getBeanDefinitionNames();
+	for (String beanName : beans) {
+		System.out.println(beanName);
+	}
 }
 }

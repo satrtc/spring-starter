@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Configuration;
 
 record Address(String state, String city) {};
 record Person(String name, int age) {};
+
 @Configuration
 public class AppConfig {
 
