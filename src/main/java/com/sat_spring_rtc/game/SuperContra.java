@@ -1,6 +1,6 @@
-package com.sat_spring_rtc;
+package com.sat_spring_rtc.game;
 
-public class MarioGame implements GamingConsole {
+public class SuperContra implements GamingConsole{
 
 	public void up()
 	{
@@ -9,7 +9,7 @@ public class MarioGame implements GamingConsole {
 	
 	public void down()
 	{
-		System.out.println("Go down");
+		System.out.println("sit down");
 	}
 	
 	public void left()
@@ -19,6 +19,6 @@ public class MarioGame implements GamingConsole {
 	
 	public void right()
 	{
-		System.out.println("Go forward");
+		System.out.println("fire bullet");
 	}
 }

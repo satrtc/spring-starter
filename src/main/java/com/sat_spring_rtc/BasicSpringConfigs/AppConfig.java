@@ -38,7 +38,6 @@ public class AppConfig {
 		return "Hye you are talking to Satyam 2.0";
 	}
 	
-
 	
 	@Bean(name="personDetails")
 	public Person person(String mname, int age)

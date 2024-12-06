@@ -1,4 +1,4 @@
-package com.sat_spring_rtc;
+package com.sat_spring_rtc.game;
 
 public class PacMan implements GamingConsole {
 
